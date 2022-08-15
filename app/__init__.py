@@ -4,10 +4,14 @@ import config
 import app.metadata as metadatas
 import json
 from app.tools.socket import socket
+from app.tools.mail import MailManager
+from app.tools.database import DatabaseManager
 
 app = FastAPI(openapi_tags=metadatas.tags_metadata)
 app_socket = socket
 configuration = config
+mail = MailManager()
+database = DatabaseManager()
 
 app.mount("/packages", StaticFiles(directory="app/packages"), name="packages")
 

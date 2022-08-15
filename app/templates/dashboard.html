@@ -26,104 +26,78 @@
                 <div class="tile is-ancestor">
                     <div class="tile is-vertical is-8">
                       <div class="tile">
-                        <div class="tile is-parent is-vertical">
-                          <article class="tile is-child box">
-                            <p class="title">Vertical tiles</p>
-                            <p class="subtitle">Top box</p>
-                          </article>
-                          <article class="tile is-child box">
-                            <!-- <p class="title">Vertical tiles</p>
-                            <p class="subtitle">Bottom box</p> -->
-                            <canvas id="myChart"></canvas>
-                          </article>
+
+                        <div class="tile is-parent">
+                          <div class="tile box">
+                            <!-- <div class="chart-container" style="position: relative; height:100px;">
+                              <canvas id="pieChart" style="position: relative; height:100px;"></canvas>
+                            </div> -->
+                          </div>
+                        </div>
+                        <div class="tile is-parent">
+                          <div class="tile box">
+                            <canvas id="lineChart"></canvas>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="tile is-parent">
+                        <div class="tile is-child box">
+                          <canvas id="barChart"></canvas>
                         </div>
                       </div>
-                      
-                      <!-- <div class="tile is-parent">
-                        <article class="tile is-child box">
-                          <p class="title">Wide column</p>
-                          <p class="subtitle">Aligned with the right column</p>
-                          <div class="content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                          </div>
-                        </article>
-                      </div> -->
                     </div>
 
                     <div class="tile is-parent">
-                      <!-- <article class="tile is-child box">
-                        <div class="content">
-                        </div>
-                      </article> -->
-                      <article classs="tile is-child box">
+                      <div class="tile is-vertical box">
+                        <p class="is-title">Overview By Category</p>
+
+                        <canvas id="pieChart" style="position: relative;"></canvas>
+
                         <table class="table is-fullwidth is-small is-hoverable is-striped">
                             <thead>
                                 <tr>
-                                    <th><abbr title="No">No.</abbr></th>
-                                    <th>Name</th>
-                                    <th><abbr title="Part Number">Part No.</abbr></th>
-                                    <th><abbr title="Quantity">Qty</abbr></th>
-                                    <th><abbr title="Date Issued">Date</abbr></th>
-                                    <th><abbr title="Status">Status</abbr></th>
+                                    <th class="is-size-7">No.</th>
+                                    <th class="is-size-7">Name</th>
+                                    <th class="is-size-7">Part No.</th>
+                                    <th class="is-size-7">Date</th>
+                                    <th class="is-size-7">Status</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th>1</th>
-                                    <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
+                                    <th class="is-size-7">1</th>
+                                    <td class="is-size-7">
+                                      <a href="#" title="Title">ABC</a>
                                     </td>
-                                    <td>38</td>
-                                    <td>23</td>
-                                    <td>12</td>
-                                    <td>3</td>
+                                    <td class="is-size-7">23</td>
+                                    <td class="is-size-7">12</td>
+                                    <td class="is-size-7">3</td>
                                 </tr>
                                 <tr>
-                                    <th>2</th>
-                                    <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
+                                    <th class="is-size-7">2</th>
+                                    <td class="is-size-7">
+                                      <a href="#" title="Title">DEF</a>
                                     </td>
-                                    <td>38</td>
-                                    <td>23</td>
-                                    <td>12</td>
-                                    <td>3</td>
+                                    <td class="is-size-7">23</td>
+                                    <td class="is-size-7">12</td>
+                                    <td class="is-size-7">3</td>
                                 </tr>
                                 <tr>
-                                    <th>3</th>
-                                    <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
-                                    </td>
-                                    <td>38</td>
-                                    <td>23</td>
-                                    <td>12</td>
-                                    <td>3</td>
-                                </tr>
-                                <tr>
-                                    <th>4</th>
-                                    <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
-                                    </td>
-                                    <td>38</td>
-                                    <td>23</td>
-                                    <td>12</td>
-                                    <td>3</td>
-                                </tr>
-                                <tr>
-                                    <th>5</th>
-                                    <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
-                                    </td>
-                                    <td>38</td>
-                                    <td>23</td>
-                                    <td>12</td>
-                                    <td>3</td>
-                                </tr>
+                                  <th class="is-size-7">3</th>
+                                  <td class="is-size-7">
+                                    <a href="#" title="Title">GHI</a>
+                                  </td>
+                                  <td class="is-size-7">23</td>
+                                  <td class="is-size-7">12</td>
+                                  <td class="is-size-7">3</td>
+                              </tr>
                             </tbody>
                         </table>
-                      </article>
+                      </div>
                     </div>
                 </div>
-                <!-- <p class="title">
-                  Dashboard
-                </p> -->
-                <!-- <p class="subtitle">
-                  Dashboard subtitle
-                </p> -->
               </div>
             </div>
 
